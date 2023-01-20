@@ -1,0 +1,14 @@
+.game-details{
+    border: 1px solid white;
+    padding: 20px 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 200px;
+    backdrop-filter: blur(4px) brightness(90%);
+}
+.game-description{
+    line-height: 1.5;
+    font-size: 25px;
+    font-weight: 100;
+}
+

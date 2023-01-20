@@ -1,0 +1,43 @@
+.image-container{
+    max-width: 200px;
+    padding: 10px;
+}
+
+.game-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 200px;
+}
+
+.game-info-container.active .start{
+    border: 1px solid white;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+    transition: background-color .5s;
+}
+
+.game-info-container.active .start:hover{
+    background: white;
+    color: var(--ps4-blue);
+}
+
+.game-info-container.active .start::after{
+    display: block;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--ps4-blue);
+    transition: width .5s .5s;
+    margin: 0 auto;
+}
+
+.game-info-container.active:hover .start::after{
+    width: 100%;
+}
+

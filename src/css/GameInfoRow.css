@@ -1,0 +1,14 @@
+.game-info-grid-container{
+    display: grid;
+    width: 100%;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6,200px);
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.game-info-grid-container:focus{
+    outline: none;
+    border: none;
+}
